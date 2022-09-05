@@ -1,0 +1,95 @@
+header{
+    background: linear-gradient( to right, #006f90, #fff);
+    color: #052242;
+}
+
+
+header span.text-ico{
+    font-size: 12px;
+    line-height: 28px;
+
+}
+
+header div img{
+    max-height: 26px;
+}
+div.titulo2{
+    font-weight: bold;
+}
+.bg-purpura{
+    background: #6a4899;
+    color: #fff;
+}
+.btntramites{
+    color: #fff;
+    font-size: 13px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+}
+
+/*botones de naveagcion*/
+#menubarra {
+    background-color: #fff;
+    border-bottom: 5px solid #d9d9d9;
+}
+
+#menubarra ul li {
+    display: inline-block;
+    padding: 1rem .5rem 0 0;
+}
+
+#menubarra ul li a {
+    font-size: 14px;
+    color: #787878;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+
+#menubarra ul li a:hover {
+    color: #6a4899;
+    border-bottom: 2px solid #6a4899;
+}
+
+#menubarra ul li.selected a {
+    color: #6a4899;
+    border-bottom: 2px solid #6a4899;
+
+}
+#btntramite{
+    box-shadow: 2px 2px 5px 0px #777676;
+}
+.logo{
+    width: 255px;
+}
+.divcentral{
+    color: #fff;
+}
+.tarjeta-header {
+    background-image: url(../img/Alumno-Regular.png);
+    background-position: left;
+    background-size: cover;
+    color: #fff;
+    height: 120px;
+
+    border-radius: 40px 40px 0 0;
+    -moz-border-radius: 40px 40px 0 0;
+    -webkit-border-radius: 40px 40px 0 0;
+}
+.card h5{
+    color: #006f90;
+    font-style: normal;
+}
+
+
+footer{
+    background-color: #00a6b1;
+    color: #fff;
+    font-size: 12px;
+    
+}
+
+footer a{
+    text-decoration: none!important;
+    color: #fff;
+}

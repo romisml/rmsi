@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Memo Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/memotest.css">
+</head>
+
+<body class="mifondo">
+    <div class="container" >
+        <div class="row border pt-2 pb-2 justify-content-center">
+            <header class="col-12 text-center bg-info">
+                <h3>Memo Test</h3>
+            </header>
+            <div id="tablero" class="row p-2 text-center">
+
+                <div class="col-md-2 col-sm-4 p-2 text-center">
+                    <div>
+                        <img src="img/signo.jpg" class="img-fluid img-thumbnail borde">
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-4 p-2 text-center">
+                    <div>
+                        <img src="img/signo.jpg" class="img-fluid img-thumbnail borde">
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-4 p-2 text-center">
+                    <div>
+                        <img src="img/signo.jpg" class="img-fluid img-thumbnail borde">
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-4 p-2 text-center">
+                    <div>
+                        <img src="img/signo.jpg" class="img-fluid img-thumbnail borde">
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-4 p-2 text-center">
+                    <div>
+                        <img src="img/signo.jpg" class="img-fluid img-thumbnail borde">
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-4 p-2 text-center">
+                    <div>
+                        <img src="img/signo.jpg" class="img-fluid img-thumbnail borde">
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-4 p-2 text-center">
+                    <div>
+                        <img src="img/signo.jpg" class="img-fluid img-thumbnail borde">
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-4 p-2 text-center">
+                    <div>
+                        <img src="img/signo.jpg" class="img-fluid img-thumbnail borde">
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-4 p-2 text-center">
+                    <div>
+                        <img src="img/signo.jpg" class="img-fluid img-thumbnail borde">
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-4 p-2 text-center">
+                    <div>
+                        <img src="img/signo.jpg" class="img-fluid img-thumbnail borde">
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-4 p-2 text-center">
+                    <div>
+                        <img src="img/signo.jpg" class="img-fluid img-thumbnail borde">
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-4 p-2 text-center">
+                    <div>
+                        <img src="img/signo.jpg" class="img-fluid img-thumbnail borde">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-10 text-center">
+                <button id="btnIniciarJuego" type="button" class="btn btn-info" data-toggle="modal" data-target="#modalJuego">Iniciar juego
+                </button>
+                <button id="btnPuntajes" type="button" class="btn btn-info" data-toggle="modal" data-target="#modaltablapuntaje">Puntajes Historico</button>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- Modal tabla de jugadores -->
+    <div class="modal fade bd-example-modal-lg" id="modaltablapuntaje" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Historico de puntajes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!--tabla de puntajes-->
+                    <div class="row ">
+                        <div class="col-12 text-center">
+                            <h2 class="">Los mejores Jugadores</h2>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <table id="tbl-puntajes" class="table">
+                            <thead class="bg-info">
+                                <tr>
+                                    <th scope="col">Jugador</th>
+                                    <th scope="col">Pais</th>
+                                    <th scope="col">Puntaje</th>
+                                    <th scope="col">Fecha</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Volver Al juego</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VEntana de juego -->
+    <div class="modal fade" id="modalJuego" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Antes de iniciar el Juego!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-8 mx-auto">
+                            <input id="txtNombre" type="text" class="form-control" placeholder="Ingresa tú nombre ..." required>
+                        </div>
+                        <div class="col-8 mx-auto my-3">
+                            <input id="txtEmail" type="email" class="form-control" placeholder="Ingresa tú correo ..." required>
+                        </div>
+                        <div class="col-8 mx-auto">
+                            <select class="custom-select d-block" id="txtPais" name="txtPais" required>
+                                <option value="">Elige tu pais </option>
+                                <option value="Argentina">Argentina </option>
+                                <option value="Brazil">Brazil </option>
+                                <option value="Chile">Chile </option>
+                                <option value="Uruguay">Uruguay </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="divmsj" class="row d-none pt-3">
+                        <div class="alert alert-danger mx-auto mb-0" role="alert">
+                            Los datos ingresados no son correctos.
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button id="btnModal" type="button" class="btn btn-primary">Comenzar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/clases.js"></script>
+    <script type="text/javascript" src="js/mipjuego.js"></script>
+</body>
+
+</html>

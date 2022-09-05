@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>Obra Social OS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/miestilo.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/clases.js"></script>
+    <script type="text/javascript" src="js/botones.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--barra superior-->
+        <header class="row pt-1 pb-1">
+            <div class="col-sm-6 col-md-3 centrado">
+                <img src="img/ico-urgencias.png" alt="urgencias las 24hs" />
+                <span class="text-ico">Urgencias y Emergencias las 24 hs</span>
+            </div>
+            <div class="col-sm-6 col-md-3 centrado">
+                <img src="img/ico-atencion.png" alt="Atencion al beneficiario" />
+                <span class="text-ico">Atención al Beneficiario</span>
+            </div>
+            <div class="col-sm-6 col-md-3 titulo2 centrado">
+                0800-444-1234 (ObraSocial OS)
+            </div>
+            <div class="col-sm-3 col-md-3 centrado">
+                <button id="btntramite" class="btn btntramites bg-purpura">
+                    <i class="fa fa-user" aria-hidden="true"></i> TRÁMITES ON LINE</button>
+            </div>
+        </header>
+        <!-- fin barra superior-->
+
+        <!--menu de navegacion-->
+        <div class="row">
+            <nav class="col-md-12" id="menubarra">
+                <div class="row">
+                    <div class="col-sm-12 col-md-2 logo">
+                        <img class="logo" src="img/logo.jpg" alt="logo obra social" />
+                    </div>
+                    <div class="col-sm-12 col-md-9 menu">
+                        <ul>
+                            <li class=" ">
+                                <a class="" href="inicio.html">INICIO </a>
+                            </li>
+                            <li class="">
+                                <a class="" href="#">ATENCION AL AFILIADO </a>
+                            </li>
+                            <li class="">
+                                <a class="" href="#">QUIERO AFILIARME </a>
+                            </li>
+                            <li class="">
+                                <a class="" href="image.html">GALERIA</a>
+                            </li>
+                            <li class="">
+                                <a class="" href="#">TEMAS DE SALUD</a>
+                            </li>
+                            <li class="selected">
+                                <a class="" href="registro.html">CONTACTO </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class=" col-sm-12 col-md-1 redes centrado">
+
+                    </div>
+                </div>
+
+
+
+            </nav>
+        </div>
+        <!--fin menu navegacion-->
+
+        <div class="row cartel">
+            <div class="col">
+
+            </div>
+            <div class="col pl-0">
+                <img class="ml-10" src="img/bg-solicite-asesoramiento.jpg" alt="aaa" />
+            </div>
+
+        </div>
+
+        <!--div encabezado de articulos-->
+        <div class="row divmedio">
+            <div class="col-md-6 bg-purpura divcentral">
+                <span class="align-middle">
+                    <img class="icono" src="img/ico-urgencias-home.png" alt="urgencias">
+                </span>
+                <span class="align-middle">
+                    Urgencias y Emergencias las 24 hs
+                </span>
+            </div>
+
+            <div class="col-md-6">
+
+                <span>
+                    <img class="icono" src="img/ico-atencion-home.png" alt="atencion">
+                </span>
+                <span class="align-middle">
+                    Atención al Beneficiario Lun. a Vie. 8:30 a 20:30 hs / Sáb. 8:30 a 13 hs
+                </span>
+
+            </div>
+        </div>
+        <!--fin div encabezado de articulos-->
+        <!--formulario-->
+        <div class="row">
+
+        </div>
+        <div class="row mt-3">
+
+            <div class="col-1 col-md-4">
+
+            </div>
+            <div class="col-1 col-md-4">
+                <div>
+                    <h3>Formulario de Registro</h3>
+                </div>
+                <form id="needs-validation" novalidate>
+                    <div class="form-group row">
+                        <label for="txtId" class="col-sm-4 col-form-label">Id ingreso:</label>
+                        <div class="col-sm-8">
+                            <input id="txtId" class="form-control" type="text" placeholder="ingrese su Id" required/>
+                            <div class="invalid-feedback">
+                                Por favor ingrese un Id.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="txtClave">Clave:</label>
+                        <div class="col-sm-8">
+                            <input id="txtClave" class="form-control" type="password" placeholder="ingrese su clave" required/>
+                            <div class="invalid-feedback">
+                                Por favor ingrese una clave.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="txtClave">Repita Clave:</label>
+                        <div class="col-sm-8">
+                            <input id="txtClave2" class="form-control" type="password" placeholder="Repita su clave" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="txtMail">Ingrese su mai:</label>
+                        <div class="col-sm-8">
+                            <input id="txtMail" class="form-control" type="email" placeholder="ingrese su email" required/>
+                            <div class="invalid-feedback">
+                                Por favor ingrese su email.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="txtMail2">Repita su mai:</label>
+                        <div class="col-sm-8">
+                            <input id="txtMail2" class="form-control" type="email" placeholder="Repita su email" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="txtNombre">Nombre:</label>
+                        <div class="col-sm-8">
+                            <input id="txtNombre" class="form-control" type="text" placeholder="ingrese su nombre" required/>
+                            <div class="invalid-feedback">
+                                Por favor ingrese su nombre.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="txtApellido">Apellido:</label>
+                        <div class="col-sm-8">
+                            <input id="txtApellido" class="form-control" type="text" placeholder="Ingrese su apellido" required/>
+                            <div class="invalid-feedback">
+                                Por favor ingrese su apellido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="txtFechanac">Fecha Nac.</label>
+                        <div class="col-sm-8">
+                            <input id="txtFechanac" class="form-control" type="date" required/>
+                            <div class="invalid-feedback">
+                                Por favor ingrese una fecha.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+
+                        <label class="col-sm-4 col-form-label">Genero:</label>
+                        <div class="col-sm-8">
+                            <div class="form-check form-check-inline">
+                                <label class="custom-control custom-radio">
+                                    <input class="form-check-input" type="radio" name="genero" id="inlineRadioM" value="masculino" required>
+                                    <span>Masculino</span>
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="custom-control custom-radio">
+                                    <input class="form-check-input" type="radio" name="genero" id="inlineRadioF" value="femenino" required> Femenino
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="txtPais"> Pais:</label>
+                        <div class="col-sm-8">
+                            <select class="custom-select d-block my-3" id="txtPais" name="txtPais" required>
+                                <option value="">Elige tu pais </option>
+                                <option value="Argentina">Argentina </option>
+                                <option value="Brazil">Brazil </option>
+                                <option value="Mongolia">Paraguay </option>
+                                <option value="Mongolia">Uruguay </option>
+                                <option value="Mongolia">Chile </option>
+                                <option value="Mongolia">Bolivia </option>
+                                <option value="Mongolia">Cuba </option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="btnEnviar" type="button" class="btn btn-primary"> Registrar</button>
+                    <button id="btnLimpiar" type="reset" class="btn btn-primary"> Limpiar</button>
+                    <button id="btnMostrar" type="button" class="btn btn-primary">Admin Registros Hist.</button>
+                </form>
+
+            </div>
+            <div class="col-1 col-md-4">
+
+            </div>
+
+            <!--inicio de tabla de registro-->
+            <div class="row mt-3 mx-auto">
+                <div class="col-sm-12 mx-auto">
+                    <table class="table" id="tbl-registros">
+                        <thead>
+                            <tr>
+                                <th scope="col">Idingreso</th>
+                                <th scope="col">Apellido</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Fecha Nac.</th>
+                                <th scope="col">Genero</th>
+                                <th scope="col">Gestionar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!--Ventana Modal-->
+            <div id="modalGestion" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Gestion de Registro</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="txtId" class="col-form-label">Id ingreso:</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input id="TxtIdMod" class="form-control" type="text" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label class="col-form-label">Apellido:</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input id="TxtApeMod" class="form-control" type="text" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label class="col-form-label">Nombre:</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input id="TxtNomMod" class="form-control" type="text" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label class="col-form-label">Email:</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input id="TxtEmailMod" class="form-control" type="text" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label class="col-form-label">Genero:</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input id="TxtGenMod" class="form-control" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="btnEliminarReg" type="button" class="btn btn-primary">Eliminar Registro</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-3">
+
+
+            <footer class="col-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/logo.jpg" alt="Obra Social" title="Obra Social" class="img-responsive logo">
+                    </div>
+                    <div class="col-md-9">
+                        <p>
+                            <a href="#">Política de Privacidad </a> -
+                            <a href="#"> Mapa de sitio</a>
+                        </p>
+                        <p>
+                            Obras Social 2018 - Todos los derechos reservados - Casa Central: Facultad de ingenieria
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

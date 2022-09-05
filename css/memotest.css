@@ -1,0 +1,12 @@
+.signo{
+   height: 232px;
+   width: 176px;
+}
+.borde{
+    background-color: #ce9b00;
+}
+.mifondo{
+    background-image: url("../img/fodo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
